@@ -85,13 +85,11 @@ const ReviewPage = () => {
         <Stack spacing={4} sx={{ mb: 2 }}>
           <LinearStepper activeStep={STEPS.indexOf(step)} steps={STEPS} />
 
-          <BookLayout.Contents>
-            <Funnel>
-              <Funnel.Step name="책 정보">
-                <BookStep1 />
-              </Funnel.Step>
-            </Funnel>
-          </BookLayout.Contents>
+          <Funnel>
+            <Funnel.Step name="책 정보">
+              <BookStep1 />
+            </Funnel.Step>
+          </Funnel>
 
           <Stack direction="row">
             <Button
